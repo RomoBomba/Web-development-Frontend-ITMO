@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="гитары, купить гитару, музыкальные инструменты, электрогитара, акустическая гитара, бас-гитара">
+    <meta name="description" content="MusicStore - лучший магазин гитар в городе. Широкий выбор, гарантия качества, рассрочка и кредит">
+    <title>MusicStore - Магазин гитар</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ArtMan-8/outline-prototype@main/outlines.css">
+</head>
+<body>
+<header>
+    <h1>MusicStore</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#credit">Кредит</a></li>
+            <li><a href="#cart">Корзина</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="hero">
+        <h2>Лучшие гитары для вашего творчества</h2>
+        <p>Мы предлагаем широкий выбор качественных гитар от проверенных производителей с гарантией и возможностью рассрочки.</p>
+    </section>
+
+    <section id="popular-products">
+        <h2>Популярные товары</h2>
+        <div style="display: flex; justify-content: space-around;">
+            <!-- Товар 1 -->
+            <article>
+                <h3><a href="#squier-hello-kitty" title="Подробнее о Squier Hello Kitty">Squier Hello Kitty Stratocaster</a></h3>
+                <img src="../images/hellokitty.png" alt="Squier Hello Kitty" width="300" height="300">
+                <p>Лимитированная гитара, в честь 50-летия Hello Kitty.</p>
+                <p>Цена: <strong>65 000 руб.</strong> <del>70 000 руб.</del></p>
+            </article>
+
+            <!-- Товар 2 -->
+            <article>
+                <h3><a href="#bc-rich-kk-v" title="Подробнее о B.C. Rich Kerry King V">B.C. Rich Kerry King V</a></h3>
+                <img src="../images/2054.jpg" alt="B.C. Rich KKV" width="300" height="300">
+                <p>Популярная модель с агрессивной формой.</p>
+                <p>Цена: <strong>68 000 руб.</strong> <del>75 000 руб.</del></p>
+            </article>
+
+            <!-- Товар 3 -->
+            <article>
+                <h3><a href="#epiphone-thunderbird" title="Подробнее о Epiphone Thunderbird">Epiphone Thunderbird IV</a></h3>
+                <img src="../images/bass1.jpg" alt="Epiphone Thunderbird IV" width="300" height="300">
+                <p>Легендарная бас-гитара с топом из махагони.</p>
+                <p>Цена: <strong>43 500 руб.</strong> <del>55 000 руб.</del></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="guitar-image">
+        <h2>Наш магазин</h2>
+        <img src="../images/shop.jpg" alt="Электрогитара Fender" width="600" height="400">
+
+        <blockquote>
+            <p>«Между жизнью и смертью — я выбираю гитару»</p>
+            <cite>Пабло Неруда</cite>
+        </blockquote>
+    </section>
+
+    <section id="credit-form">
+        <h2>Оформите рассрочку онлайн</h2>
+        <p>Получите быстрое предварительное решение по кредиту на покупку инструмента.</p>
+
+        <form>
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="amount">Желаемая сумма:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+
+        <p>Рассчитать платеж: <em>ЕП = S × (P + (P / ((1 + P)<sup>N</sup> - 1)))</em>, где S - сумма кредита, P - процентная ставка, N - срок кредита.</p>
+    </section>
+
+    <section id="code-snippet">
+        <h2>Для программистов</h2>
+        <h3>Пример кода для генерации аккорда</h3>
+        <pre><code>
+function generateChord(root, type) {
+    const chords = {
+        'C-major': ['C', 'E', 'G'],
+        'G-major': ['G', 'B', 'D'],
+        'A-minor': ['A', 'C', 'E']
+    };
+
+    return chords[`${root}-${type}`] || ['Неизвестный аккорд'];
+}
+
+console.log(generateChord('C', 'major')); // ['C', 'E', 'G']
+            </code></pre>
+    </section>
+</main>
+
+<footer>
+    <h2>Контакты</h2>
+    <address>
+        <p>г. Санкт-Петербург, ул. Пушкина, д. 15</p>
+        <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+        <p>Email: <a href="mailto:info@musicstore.ru">info@musicstore.ru</a></p>
+    </address>
+
+    <pre>
+                              ,
+                          ,   |
+       _,,._              |  0'
+     ,'     `.__,--.     0'
+    /   .--.        |           ,,,
+    | [=========|==|==|=|==|=|==___]
+    \   "--"  __    |           '''
+     `._   _,'  `--'
+        ""'     ,   ,0     ,
+    hjm         |)  |)   ,'|
+      ____     0'   '   | 0'
+      |  |             0'
+     0' 0'
+        </pre>
+
+    <p>&copy; 2025 MusicStore. Все права защищены.</p>
+</footer>
+</body>
+</html>
