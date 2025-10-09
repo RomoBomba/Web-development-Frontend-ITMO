@@ -1,7 +1,8 @@
-# Web-development-Frontend-ITMO
+# m3314-Shevtsov
 
-Лабораторные работы по курсу "Web-разработка: Frontend" *ITMO IS27*
-
+# Лабораторная работа 3. Адаптивная вёрстка
 **ФИО:** Шевцов Роман\
 **Группа:** М3314\
 **Тема проекта:** Интернет-магазин гитар "MusicStore" с системой онлайн-кредитования\
+**Описание:** Добавление адаптивности\
+**Ссылка на GitHub Pages:** [тык](https://romobomba.github.io/Web-development-Frontend-ITMO/)
