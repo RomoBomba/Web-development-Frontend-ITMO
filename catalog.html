@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="каталог гитар, купить гитару, электрогитары, акустические гитары, бас-гитары">
+    <meta name="description" content="Полный каталог гитар в магазине MusicStore. Электрогитары, акустические гитары, бас-гитары и аксессуары">
+    <title>MusicStore - Каталог гитар</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="page">
+<header class="header">
+    <div class="container">
+        <h1 class="header__title">MusicStore</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="credit.html" class="nav__link">Кредит</a></li>
+                <li class="nav__item"><a href="cart.html" class="nav__link">Корзина</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero__title">Каталог гитар</h2>
+            <p class="hero__text">Широкий выбор качественных инструментов для музыкантов любого уровня</p>
+        </div>
+    </section>
+
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category" class="filter-label">Тип гитары:</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">Все гитары</option>
+                        <option value="electric">Электрогитары</option>
+                        <option value="acoustic">Акустические гитары</option>
+                        <option value="bass">Бас-гитары</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price" class="filter-label">Цена:</label>
+                    <select id="price" class="filter-select">
+                        <option value="all">Любая</option>
+                        <option value="budget">До 30,000 руб.</option>
+                        <option value="medium">30,000 - 70,000 руб.</option>
+                        <option value="premium">От 70,000 руб.</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand" class="filter-label">Бренд:</label>
+                    <select id="brand" class="filter-select">
+                        <option value="all">Все бренды</option>
+                        <option value="fender">Fender</option>
+                        <option value="gibson">Gibson</option>
+                        <option value="ibanez">Ibanez</option>
+                        <option value="epiphone">Epiphone</option>
+                        <option value="squier">Squier</option>
+                        <option value="yamaha">Yamaha</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Все гитары в наличии</h2>
+            <div class="products__grid">
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Fender American Professional II Stratocaster</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/fender-strat.png" alt="Fender Stratocaster" class="product-card__image">
+                        <span class="image-caption">Флагманская модель</span>
+                    </div>
+                    <p class="product-card__description">Легендарный стратокастер с улучшенной электроникой.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">145 000 руб.</strong>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Gibson Les Paul Standard 50s</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/gibson-lespaul.png" alt="Gibson Les Paul" class="product-card__image">
+                        <span class="image-caption">Винтажный звук</span>
+                    </div>
+                    <p class="product-card__description">Классика рок-музыки в оригинальном исполнении 50-х годов.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">210 000 руб.</strong>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Ibanez RG550 Yellow</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/ibanez-rg550.jpg" alt="Ibanez RG550" class="product-card__image">
+                        <span class="image-caption">Для скоростной игры</span>
+                    </div>
+                    <p class="product-card__description">Переиздание культовой модели для любителей хэви-музыки.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">85 000 руб.</strong>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Yamaha FG800</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/yamaha-fg800.png" alt="Yamaha FG800" class="product-card__image">
+                        <span class="image-caption">Идеальна для начинающих</span>
+                    </div>
+                    <p class="product-card__description">Качественная акустическая гитара по доступной цене.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">18 500 руб.</strong>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Ibanez Gio GRX120 Blue</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/ibanez_gio_grx120.jpg" alt="Ibanez Gio GRX120" class="product-card__image">
+                        <span class="image-caption">Альтернативная внешность</span>
+                    </div>
+                    <p class="product-card__description">Уникальная модель с характерным дизайном.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">32 000 руб.</strong>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Epiphone ES-335</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/epiphone-335.png" alt="Epiphone ES-335" class="product-card__image">
+                        <span class="image-caption">Полуакустическая классика</span>
+                    </div>
+                    <p class="product-card__description">Легендарная полуакустика по доступной цене.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">45 000 руб.</strong>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Squier Hello Kitty Stratocaster</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/hellokitty.png" alt="Squier Hello Kitty" class="product-card__image">
+                        <span class="image-caption">Лимитированная серия</span>
+                    </div>
+                    <p class="product-card__description">Лимитированная гитара, в честь 50-летия Hello Kitty.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">65 000 руб.</strong>
+                        <del class="price--old">70 000 руб.</del>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">B.C. Rich Kerry King V</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/bcrich.jpg" alt="B.C. Rich KKV" class="product-card__image">
+                        <span class="image-caption">Агрессивный дизайн</span>
+                    </div>
+                    <p class="product-card__description">Популярная модель с агрессивной формой.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">68 000 руб.</strong>
+                        <del class="price--old">75 000 руб.</del>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+
+                <article class="product-card">
+                    <h3 class="product-card__title">
+                        <a href="#" class="product-card__link">Epiphone Thunderbird IV</a>
+                    </h3>
+                    <div class="product-card__image-wrapper">
+                        <img src="images/guitars/bass1.jpg" alt="Epiphone Thunderbird IV" class="product-card__image">
+                        <span class="image-caption">Классический бас</span>
+                    </div>
+                    <p class="product-card__description">Легендарная бас-гитара с топом из махагони.</p>
+                    <p class="product-card__price">
+                        <strong class="price--current">43 500 руб.</strong>
+                        <del class="price--old">55 000 руб.</del>
+                    </p>
+                    <button class="button button--primary add-to-cart">В корзину</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🚚 Бесплатная доставка</h3>
+                    <p>При заказе от 20,000 рублей</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎵 Бесплатная настройка</h3>
+                    <p>Профессиональная настройка перед отправкой</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔧 Гарантия 2 года</h3>
+                    <p>Официальная гарантия на все инструменты</p>
+                </div>
+                <div class="info-card">
+                    <h3>💳 Рассрочка 0%</h3>
+                    <p>Возможность покупки в рассрочку</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <h2 class="footer__title">Контакты</h2>
+        <address class="footer__address">
+            <p class="footer__text">г. Санкт-Петербург, ул. Пушкина, д. 15</p>
+            <p class="footer__text">Телефон: <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a></p>
+            <p class="footer__text">Email: <a href="mailto:info@musicstore.ru" class="footer__link">info@musicstore.ru</a></p>
+        </address>
+
+        <pre class="ascii-art">
+                              ,
+                          ,   |
+       _,,._              |  0'
+     ,'     `.__,--.     0'
+    /   .--.        |           ,,,
+    | [=========|==|==|=|==|=|==___]
+    \   "--"  __    |           '''
+     `._   _,'  `--'
+        ""'     ,   ,0     ,
+    hjm         |)  |)   ,'|
+      ____     0'   '   | 0'
+      |  |             0'
+     0' 0'
+            </pre>
+
+        <p class="footer__copyright">&copy; 2025 MusicStore. Все права защищены.</p>
+    </div>
+</footer>
+</body>
+</html>
