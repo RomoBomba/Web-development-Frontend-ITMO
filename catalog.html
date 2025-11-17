@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="каталог гитар, купить гитару, электрогитары, акустические гитары, бас-гитары">
+    <meta name="description" content="Полный каталог гитар в магазине MusicStore. Электрогитары, акустические гитары, бас-гитары и аксессуары">
+    <title>MusicStore - Каталог гитар</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="page">
+<header class="header">
+    <div class="container">
+        <h1 class="header__title">MusicStore</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="credit.html" class="nav__link">Кредит</a></li>
+                <li class="nav__item"><a href="cart.html" class="nav__link">Корзина</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero__title">Каталог гитар</h2>
+            <p class="hero__text">Широкий выбор качественных инструментов для музыкантов любого уровня</p>
+        </div>
+    </section>
+
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category" class="filter-label">Тип гитары:</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">Все гитары</option>
+                        <option value="electric">Электрогитары</option>
+                        <option value="acoustic">Акустические гитары</option>
+                        <option value="bass">Бас-гитары</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price" class="filter-label">Цена:</label>
+                    <select id="price" class="filter-select">
+                        <option value="all">Любая</option>
+                        <option value="budget">До 30,000 руб.</option>
+                        <option value="medium">30,000 - 70,000 руб.</option>
+                        <option value="premium">От 70,000 руб.</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand" class="filter-label">Бренд:</label>
+                    <select id="brand" class="filter-select">
+                        <option value="all">Все бренды</option>
+                        <option value="fender">Fender</option>
+                        <option value="gibson">Gibson</option>
+                        <option value="ibanez">Ibanez</option>
+                        <option value="epiphone">Epiphone</option>
+                        <option value="squier">Squier</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="bcrich">B.C. Rich</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button class="button button--secondary" id="reset-filters">Сбросить фильтры</button>
+                </div>
+            </div>
+            <div class="filter-results">
+                <span id="results-count">Найдено 9 товаров</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Все гитары в наличии</h2>
+            <div class="products__grid" id="products-grid">
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🚚 Бесплатная доставка</h3>
+                    <p>При заказе от 20,000 рублей</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎵 Бесплатная настройка</h3>
+                    <p>Профессиональная настройка перед отправкой</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔧 Гарантия 2 года</h3>
+                    <p>Официальная гарантия на все инструменты</p>
+                </div>
+                <div class="info-card">
+                    <h3>💳 Рассрочка 0%</h3>
+                    <p>Возможность покупки в рассрочку</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <h2 class="footer__title">Контакты</h2>
+        <address class="footer__address">
+            <p class="footer__text">г. Санкт-Петербург, ул. Пушкина, д. 15</p>
+            <p class="footer__text">Телефон: <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a></p>
+            <p class="footer__text">Email: <a href="mailto:info@musicstore.ru" class="footer__link">info@musicstore.ru</a></p>
+        </address>
+
+        <pre class="ascii-art">
+                              ,
+                          ,   |
+       _,,._              |  0'
+     ,'     `.__,--.     0'
+    /   .--.        |           ,,,
+    | [=========|==|==|=|==|=|==___]
+    \   "--"  __    |           '''
+     `._   _,'  `--'
+        ""'     ,   ,0     ,
+    hjm         |)  |)   ,'|
+      ____     0'   '   | 0'
+      |  |             0'
+     0' 0'
+            </pre>
+
+        <p class="footer__copyright">&copy; 2025 MusicStore. Все права защищены.</p>
+    </div>
+</footer>
+
+<script>
+    const productCatalog = {
+        'fender-strat': {
+            name: 'Fender American Professional II Stratocaster',
+            price: 145000,
+            image: 'images/guitars/fender-strat.png',
+            description: 'Легендарный стратокастер с улучшенной электроникой.',
+            category: 'electric',
+            brand: 'fender'
+        },
+        'gibson-lespaul': {
+            name: 'Gibson Les Paul Standard 50s',
+            price: 210000,
+            image: 'images/guitars/gibson-lespaul.png',
+            description: 'Классика рок-музыки в оригинальном исполнении 50-х годов.',
+            category: 'electric',
+            brand: 'gibson'
+        },
+        'ibanez-rg550': {
+            name: 'Ibanez RG550 Yellow',
+            price: 85000,
+            image: 'images/guitars/ibanez-rg550.jpg',
+            description: 'Переиздание культовой модели для любителей хэви-музыки.',
+            category: 'electric',
+            brand: 'ibanez'
+        },
+        'yamaha-fg800': {
+            name: 'Yamaha FG800',
+            price: 18500,
+            image: 'images/guitars/yamaha-fg800.png',
+            description: 'Качественная акустическая гитара по доступной цене.',
+            category: 'acoustic',
+            brand: 'yamaha'
+        },
+        'ibanez-grx120': {
+            name: 'Ibanez Gio GRX120 Blue',
+            price: 32000,
+            image: 'images/guitars/ibanez_gio_grx120.jpg',
+            description: 'Уникальная модель с характерным дизайном.',
+            category: 'electric',
+            brand: 'ibanez'
+        },
+        'epiphone-335': {
+            name: 'Epiphone ES-335',
+            price: 45000,
+            image: 'images/guitars/epiphone-335.png',
+            description: 'Легендарная полуакустика по доступной цене.',
+            category: 'electric',
+            brand: 'epiphone'
+        },
+        'squier-hellokitty': {
+            name: 'Squier Hello Kitty Stratocaster',
+            price: 65000,
+            image: 'images/guitars/hellokitty.png',
+            description: 'Лимитированная гитара, в честь 50-летия Hello Kitty.',
+            category: 'electric',
+            brand: 'squier'
+        },
+        'bcrich-kkv': {
+            name: 'B.C. Rich Kerry King V',
+            price: 68000,
+            image: 'images/guitars/bcrich.jpg',
+            description: 'Популярная модель с агрессивной формой.',
+            category: 'electric',
+            brand: 'bcrich'
+        },
+        'epiphone-thunderbird': {
+            name: 'Epiphone Thunderbird IV',
+            price: 43500,
+            image: 'images/guitars/bass1.jpg',
+            description: 'Легендарная бас-гитара с топом из махагони.',
+            category: 'bass',
+            brand: 'epiphone'
+        }
+    };
+
+    function loadCartFromStorage() {
+        try {
+            const stored = localStorage.getItem('musicstore-cart');
+            if (stored) {
+                return JSON.parse(stored);
+            }
+        } catch (error) {
+            console.error('Ошибка загрузки корзины:', error);
+        }
+        return {
+            items: {},
+            discount: 0,
+            discountCode: null,
+            shipping: 0
+        };
+    }
+
+    function saveCartToStorage(cartData) {
+        try {
+            localStorage.setItem('musicstore-cart', JSON.stringify(cartData));
+        } catch (error) {
+            console.error('Ошибка сохранения корзины:', error);
+        }
+    }
+
+    function addProductToCart(productId) {
+        const product = productCatalog[productId];
+        if (!product) return;
+
+        const cartData = loadCartFromStorage();
+
+        if (cartData.items[productId]) {
+            cartData.items[productId].quantity += 1;
+        } else {
+            cartData.items[productId] = {
+                type: 'product',
+                name: product.name,
+                price: product.price,
+                quantity: 1,
+                image: product.image,
+                description: product.description
+            };
+        }
+
+        saveCartToStorage(cartData);
+        showNotification(`Товар "${product.name}" добавлен в корзину!`, 'success');
+        animateAddToCartButton(productId);
+    }
+
+    function showNotification(message, type = 'info') {
+        let notification = document.querySelector('.notification');
+        if (!notification) {
+            notification = document.createElement('div');
+            notification.className = 'notification';
+            document.body.appendChild(notification);
+        }
+
+        notification.textContent = message;
+        notification.className = `notification notification--${type} notification--show`;
+
+        setTimeout(() => {
+            notification.classList.remove('notification--show');
+        }, 2000);
+    }
+
+    function animateAddToCartButton(productId) {
+        const button = document.querySelector(`.add-to-cart[data-product-id="${productId}"]`);
+        if (button) {
+            const originalText = button.textContent;
+            button.textContent = '✓ Добавлено';
+            button.classList.add('button--success');
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.classList.remove('button--success');
+            }, 1500);
+        }
+    }
+
+    function formatPrice(price) {
+        return new Intl.NumberFormat('ru-RU').format(price) + ' руб.';
+    }
+
+    function renderProducts(productsToRender = productCatalog) {
+        const productsGrid = document.getElementById('products-grid');
+        productsGrid.innerHTML = '';
+
+        Object.keys(productsToRender).forEach(productId => {
+            const product = productsToRender[productId];
+            const productElement = createProductElement(productId, product);
+            productsGrid.appendChild(productElement);
+        });
+
+        document.getElementById('results-count').textContent =
+            `Найдено ${Object.keys(productsToRender).length} товаров`;
+    }
+
+    function createProductElement(productId, product) {
+        const article = document.createElement('article');
+        article.className = 'product-card';
+        article.setAttribute('data-product-id', productId);
+        article.setAttribute('data-category', product.category);
+        article.setAttribute('data-brand', product.brand);
+        article.setAttribute('data-price', product.price);
+
+        const hasDiscount = product.oldPrice && product.oldPrice > product.price;
+
+        article.innerHTML = `
+            <h3 class="product-card__title">
+                <a href="#" class="product-card__link">${product.name}</a>
+            </h3>
+            <div class="product-card__image-wrapper">
+                <img src="${product.image}" alt="${product.name}" class="product-card__image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y0ZjRmNCIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjOTk5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iMC4zNWVtIj5ObyBpbWFnZTwvdGV4dD48L3N2Zz4='">
+                <span class="image-caption">${getCategoryCaption(product.category)}</span>
+            </div>
+            <p class="product-card__description">${product.description}</p>
+            <p class="product-card__price">
+                <strong class="price--current">${formatPrice(product.price)}</strong>
+                ${hasDiscount ? `<del class="price--old">${formatPrice(product.oldPrice)}</del>` : ''}
+            </p>
+            <button class="button button--primary add-to-cart" data-product-id="${productId}">В корзину</button>
+        `;
+
+        return article;
+    }
+
+    function getCategoryCaption(category) {
+        const captions = {
+            'electric': 'Электрогитара',
+            'acoustic': 'Акустическая гитара',
+            'bass': 'Бас-гитара'
+        };
+        return captions[category] || 'Гитара';
+    }
+
+    function filterProducts() {
+        const categoryFilter = document.getElementById('category').value;
+        const priceFilter = document.getElementById('price').value;
+        const brandFilter = document.getElementById('brand').value;
+
+        const filteredProducts = {};
+
+        Object.keys(productCatalog).forEach(productId => {
+            const product = productCatalog[productId];
+            let matches = true;
+
+            if (categoryFilter !== 'all' && product.category !== categoryFilter) {
+                matches = false;
+            }
+
+            if (brandFilter !== 'all' && product.brand !== brandFilter) {
+                matches = false;
+            }
+
+            if (priceFilter !== 'all') {
+                if (priceFilter === 'budget' && product.price > 30000) {
+                    matches = false;
+                } else if (priceFilter === 'medium' && (product.price <= 30000 || product.price > 70000)) {
+                    matches = false;
+                } else if (priceFilter === 'premium' && product.price <= 70000) {
+                    matches = false;
+                }
+            }
+
+            if (matches) {
+                filteredProducts[productId] = product;
+            }
+        });
+
+        renderProducts(filteredProducts);
+    }
+
+    function resetFilters() {
+        document.getElementById('category').value = 'all';
+        document.getElementById('price').value = 'all';
+        document.getElementById('brand').value = 'all';
+        renderProducts();
+    }
+
+    function initializeCatalog() {
+        renderProducts();
+
+        document.getElementById('products-grid').addEventListener('click', function(e) {
+            if (e.target.classList.contains('add-to-cart')) {
+                const productId = e.target.getAttribute('data-product-id');
+                addProductToCart(productId);
+            }
+        });
+
+        document.getElementById('category').addEventListener('change', filterProducts);
+        document.getElementById('price').addEventListener('change', filterProducts);
+        document.getElementById('brand').addEventListener('change', filterProducts);
+        document.getElementById('reset-filters').addEventListener('click', resetFilters);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeCatalog();
+    });
+</script>
+
+<style>
+    .notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        color: white;
+        z-index: 1000;
+        transform: translateX(400px);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        font-size: 14px;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .notification--show {
+        transform: translateX(0);
+    }
+
+    .notification--success {
+        background-color: #27ae60;
+    }
+
+    .notification--error {
+        background-color: #e74c3c;
+    }
+
+    .notification--info {
+        background-color: #3498db;
+    }
+
+    .button--success {
+        background-color: #27ae60 !important;
+        transform: scale(0.95);
+        transition: all 0.3s ease;
+    }
+
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .add-to-cart {
+        transition: all 0.3s ease;
+    }
+
+    .catalog-filters {
+        background: #f8f9fa;
+        padding: 1.5rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .filters {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+
+    .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-label {
+        font-weight: 600;
+        color: var(--text-color);
+        font-size: 0.9rem;
+    }
+
+    .filter-select {
+        padding: 0.75rem;
+        border: 2px solid #e1e8ed;
+        border-radius: 8px;
+        background: white;
+        font-family: inherit;
+        min-width: 200px;
+        transition: border-color 0.3s ease;
+    }
+
+    .filter-select:focus {
+        outline: none;
+        border-color: var(--primary-color);
+    }
+
+    .filter-results {
+        margin-top: 1rem;
+        text-align: center;
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .filters {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .filter-select {
+            min-width: 100%;
+        }
+
+        .notification {
+            right: 10px;
+            left: 10px;
+            max-width: none;
+            transform: translateY(-100px);
+        }
+
+        .notification--show {
+            transform: translateY(0);
+        }
+    }
+</style>
+</body>
+</html>
